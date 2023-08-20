@@ -1,0 +1,157 @@
+#container {
+    width: 100%;
+    height: 670px;
+    position: absolute;
+    bottom: 0px;
+    overflow: hidden;
+  }
+#head {
+    width: 500px;
+    height: 500px;
+    background: pink;
+    border: 4px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -250px;
+  }  
+#nose {
+    border: 4px solid #000;
+    width: 300px;
+    height: 180px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    margin: 0 0 0 -150px;
+  }
+  
+  .nostril {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #000;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.719);
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
+  }
+  
+  .nostril:first-child {
+    left: 50px;
+  }
+  
+  .eye:first-child {
+    left: 80px;
+  }
+  
+  .eye {
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    border: 4px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    right: 80px; 
+    top: 80px;
+    }
+  
+  .eyeball {
+    background: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+  
+  .ear.right {
+    right: 50%;
+    margin: 0 -205px 0 0;
+    left: auto;
+  }
+  
+  .ear {
+    position: absolute;
+    bottom:553px;
+    left: 50%;
+    margin: 0 0 0 -198px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 45px 120px 45px;
+    border-color: transparent transparent #000 transparent;
+  }
+  
+  .ear:after {
+    position: absolute;
+    left: -39px;
+    top: 7px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 39px 116px 39px;
+    border-color: transparent transparent pink transparent;
+  }
+  .mouth {
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    width: 50%;
+    height: 30%;
+    border-radius: 50%;
+    border-bottom: 5px solid black;
+ }
+ .title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  .container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    height: 5vh
+  }
+  
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 4.5vw;
+    text-transform: uppercase;
+  }
+ 
